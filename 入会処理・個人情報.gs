@@ -35,6 +35,7 @@ if (newGen<1){
   newGen = 1
 }
 
+
 function forNewMember() {
 
   //-----新入生用会計シートを作る-----
@@ -43,6 +44,7 @@ function forNewMember() {
   var folder = DriveApp.getFolderById("1Z_Q8jk_wPdk_k-z7zdKj9cHSL_SJLvDV")
   var tmplSheet = DriveApp.getFileById("1YlNmpXvKJGTkjy3NPv_afsdve3vPpYDX0soL6pwyev0")
   var newSheet = tmplSheet.makeCopy('第'+ newGen + '期_' + newName + '_会計シート', folder)
+  var newSheetID = newSheet.getId()
 
   //新入生以外から見えないようにする
   newSheet.setSharing(DriveApp.Access.PRIVATE, DriveApp.Permission.NONE)
@@ -73,5 +75,5 @@ function forNewMember() {
 
   var memberListSheetLR = memberListSheet.getLastRow()
   memberListSheet.getRange(2,1,memberListSheetLR-1,3).sort({column:1, ascending:false})
-
+  
 }
