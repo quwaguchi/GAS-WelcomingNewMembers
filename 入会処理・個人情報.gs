@@ -56,7 +56,7 @@ function forNewMember() {
   MailApp.sendEmail(
     address,
     '東大STOKEへようこそ',
-    newName+'さん、ストークへようこそ。\n\nストークでは、連絡の大半をDiscordで行っています。このリンク(https://discord.gg/9FZrQwnCPX )からサーバーに入り、自己紹介チャンネルに簡単な自己紹介を載せてください。\nまた、合宿情報や備品情報、会計ファイルはGoogle Driveで管理しています。https://drive.google.com/drive/folders/1z0hOT9PjPW3UzLTFO8eH_4-BfTpiMZ9E?usp=sharing からご確認ください。\n\nご不明な点は utstoke@gmail.com までお尋ねください。\n\n\n2022 UT STOKE SKI TEAM'
+    newName+'さん、ストークへようこそ。\n\nストークでは、連絡の大半をDiscordで行っています。このリンク(/*リンク*/)からサーバーに入り、自己紹介チャンネルに簡単な自己紹介を載せてください。\nまた、合宿情報や備品情報、会計ファイルはGoogle Driveで管理しています。/*ドライブのリンク*/からご確認ください。\n\nご不明な点は utstoke@gmail.com までお尋ねください。\n\n\n2022 UT STOKE SKI TEAM'
   )
 
 
